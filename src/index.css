@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-backgroundColor: transparent;
+  --page-backgroundImage: none;
+  --page-backgroundSize: auto;
+  --page-backgroundPosition: 0 0;
+  --animation-play-state: running;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--page-backgroundColor);
+  background-image: var(--page-backgroundImage);
+  background-size: var(--page-backgroundSize);
+  background-position: var(--page-backgroundPosition);
+  transition: background-color 0.3s, background-image 0.3s;
+}
+
+* {
+  animation-play-state: var(--animation-play-state) !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .clip-glitch {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    animation: glitch-clip 4s infinite linear;
+  }
+}
+
+@keyframes glitch-clip {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  2% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 85%, 0 85%);
+  }
+  4% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+  }
+  6% {
+    clip-path: polygon(0 5%, 100% 5%, 100% 95%, 0 95%);
+  }
+  8% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+  }
+  10% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.animate-drip {
+  animation-fill-mode: both;
+  transform-origin: top;
+}
+
+.animate-drip-head {
+  animation-fill-mode: both;
+}
+
+@keyframes dripping {
+  0% {
+    height: 0;
+    opacity: 0.7;
+  }
+  20% {
+    height: 40px;
+    opacity: 0.7;
+  }
+  100% {
+    height: 40px;
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes droplet {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.3) translateY(100px);
+    opacity: 0;
+  }
+}
+
+.dripping-text {
+  position: relative;
+  display: inline-block;
+}
+
+.drip {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.8) 0%, rgba(139, 92, 246, 0) 100%);
+  transform-origin: top;
+}
+
+.droplet {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.8) 0%, rgba(139, 92, 246, 0.3) 100%);
+  border-radius: 50%;
+}
+
+.liquid-effect {
+  filter: url(#goo);
+}
+
+.drip-container {
+  position: relative;
+  overflow: visible;
+}
+
+.drip {
+  position: absolute;
+  background: currentColor;
+  transform-origin: top;
+  will-change: transform;
+}
+
+.droplet {
+  position: absolute;
+  background: currentColor;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.drip, .droplet {
+  transition: opacity 0.2s ease-in-out;
+}
+
+* {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.animate-drip-line {
+  transform-origin: top;
+  animation-fill-mode: forwards;
+  will-change: height, opacity;
+}
+
+.animate-drip-drop {
+  animation-fill-mode: forwards;
+  will-change: transform, opacity;
+}
+
+/* Remove any conflicting animations from previous versions */
+.drip, .droplet, .drip-line, .drip-drop {
+  animation-fill-mode: forwards;
+}
