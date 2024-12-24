@@ -33,6 +33,19 @@ export default {
         'gitCommands': 'gitCommands 25s linear infinite',
         'terminalCommands': 'terminalCommands 20s linear infinite',
         'cssRules': 'cssRules 35s linear infinite',
+        'gradientFlow': 'gradientFlow 15s ease infinite',
+        'gradientPulse': 'gradientPulse 12s ease infinite',
+        'darkMatter': 'darkMatter 20s ease infinite',
+        'shadowRealm': 'shadowRealm 25s ease infinite',
+        'deepOcean': 'deepOcean 18s ease infinite',
+        'darkEnergy': 'darkEnergy 22s ease infinite',
+        'neuralMatrix': 'neuralMatrix 20s linear infinite',
+        'digitalRainPro': 'digitalRainPro 15s linear infinite',
+        'quantumData': 'quantumData 25s linear infinite',
+        'cyberGridPulse': 'cyberGridPulse 20s ease infinite',
+        'binaryPulse': 'binaryPulse 15s linear infinite',
+        'borderFlow': 'borderFlow 2s linear infinite',
+        'borderFlowVertical': 'borderFlowVertical 2s linear infinite',
       },
       keyframes: {
         glow: {
@@ -322,7 +335,134 @@ export default {
             backgroundPosition: '320px 320px',
             filter: 'hue-rotate(360deg) brightness(1)',
           }
-        }
+        },
+        gradientFlow: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+            filter: 'brightness(1)',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+            filter: 'brightness(1.2)',
+          }
+        },
+        gradientPulse: {
+          '0%, 100%': {
+            backgroundPosition: '0% 0%',
+            filter: 'hue-rotate(0deg)',
+          },
+          '50%': {
+            backgroundPosition: '100% 100%',
+            filter: 'hue-rotate(30deg)',
+          }
+        },
+        darkMatter: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+            filter: 'brightness(1)',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+            filter: 'brightness(1.1)',
+          }
+        },
+        shadowRealm: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          }
+        },
+        deepOcean: {
+          '0%, 100%': {
+            backgroundPosition: '50% 0%',
+            filter: 'brightness(1)',
+          },
+          '50%': {
+            backgroundPosition: '50% 100%',
+            filter: 'brightness(1.15)',
+          }
+        },
+        darkEnergy: {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%',
+            filter: 'hue-rotate(0deg)',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+            filter: 'hue-rotate(15deg)',
+          }
+        },
+        neuralMatrix: {
+          '0%': {
+            backgroundPosition: '0 0',
+            filter: 'hue-rotate(0deg) brightness(1)',
+          },
+          '50%': {
+            filter: 'hue-rotate(180deg) brightness(1.2)',
+          },
+          '100%': {
+            backgroundPosition: '40px 40px',
+            filter: 'hue-rotate(360deg) brightness(1)',
+          }
+        },
+        digitalRainPro: {
+          '0%': {
+            backgroundPosition: '0 0',
+            filter: 'brightness(1)',
+          },
+          '100%': {
+            backgroundPosition: '0 16px',
+            filter: 'brightness(1.2)',
+          }
+        },
+        quantumData: {
+          '0%, 100%': {
+            backgroundPosition: '0 0, 0 0, 0 0',
+            filter: 'hue-rotate(0deg)',
+          },
+          '50%': {
+            backgroundPosition: '25px 25px, -25px -25px, 5px 0',
+            filter: 'hue-rotate(180deg)',
+          }
+        },
+        cyberGridPulse: {
+          '0%, 100%': {
+            backgroundSize: '30px 30px',
+            filter: 'brightness(1)',
+          },
+          '50%': {
+            backgroundSize: '35px 35px',
+            filter: 'brightness(1.2)',
+          }
+        },
+        binaryPulse: {
+          '0%, 100%': {
+            backgroundPosition: '0 0',
+            filter: 'hue-rotate(0deg)',
+          },
+          '50%': {
+            backgroundPosition: '8px 8px',
+            filter: 'hue-rotate(180deg)',
+          }
+        },
+        borderFlow: {
+          '0%, 100%': {
+            backgroundPosition: '200% 0',
+          },
+          '50%': {
+            backgroundPosition: '-200% 0',
+          }
+        },
+        borderFlowVertical: {
+          '0%, 100%': {
+            backgroundPosition: '0 200%',
+          },
+          '50%': {
+            backgroundPosition: '0 -200%',
+          }
+        },
       }
     }
   }
