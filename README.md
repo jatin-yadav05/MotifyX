@@ -1,6 +1,6 @@
 # MotifyX - Transform Your Web Designs with Stunning Background Patterns
 
-![MotifyX Logo](public/motifyx-logo.png)
+![MotifyX Logo](public/favicon.svg)
 
 ✨ Elevate your web projects with MotifyX - an innovative collection of mesmerizing background patterns crafted for modern developers and designers. From sleek geometric shapes to cyberpunk-inspired animations, MotifyX offers a diverse range of customizable patterns that will bring your designs to life.
 
