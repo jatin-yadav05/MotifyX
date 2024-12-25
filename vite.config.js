@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['framer-motion'],
+      external: [],
     },
+  },
+  optimizeDeps: {
+    include: ['framer-motion'], // Ensure framer-motion is bundled
   },
 });
