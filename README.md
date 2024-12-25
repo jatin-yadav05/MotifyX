@@ -74,7 +74,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Jatin Yadav - [@jatin_yadav05](https://twitter.com/jatin_yadav05)
+Jatin Yadav - [@jatinyadav_05](https://twitter.com/jatinyadav_05)
 
 Project Link: [https://github.com/jatin-yadav05/MotifyX](https://github.com/jatin-yadav05/MotifyX)
 

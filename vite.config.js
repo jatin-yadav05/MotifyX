@@ -10,6 +10,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['framer-motion'], // Ensure framer-motion is bundled
+    include: ['framer-motion'],
   },
 });
