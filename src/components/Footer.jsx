@@ -26,6 +26,18 @@ const Footer = ({ setActiveSection }) => {
               A curated collection of beautiful background patterns for modern web projects. 
               Free, open-source, and ready to use.
             </p>
+            <a 
+              href="https://www.producthunt.com/posts/motifyx?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-motifyx" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block mt-6"
+            >
+              <img 
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=950964&theme=dark&t=1744177379027" 
+                alt="MotifyX - Transform your web designs with stunning background patterns | Product Hunt" 
+                className="w-[250px] h-[54px] sm:w-[200px] sm:h-[43px] md:w-[220px] md:h-[47px] lg:w-[250px] lg:h-[54px]" 
+              />
+            </a>
           </div>
 
           {/* Quick Links */}

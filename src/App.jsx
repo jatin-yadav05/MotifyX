@@ -187,6 +187,18 @@ function App() {
                className="p-2 hover:bg-white/10 rounded-lg transition-all hover:scale-105 duration-300">
               <FaLinkedin className="w-5 h-5" />
             </a>
+            <a 
+              href="https://www.producthunt.com/posts/motifyx?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-motifyx" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hidden lg:block"
+            >
+              <img 
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=950964&theme=dark&t=1744177379027" 
+                alt="MotifyX - Transform your web designs with stunning background patterns | Product Hunt" 
+                className="h-[42px]" 
+              />
+            </a>
           </div>
         </div>
       </nav>
